@@ -1,21 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Hello World!</title>
+    <title>Introduction to Vim</title>
     <script src='validate.js'></script>
 </head>
 <body>
     <header>
-        <h1>Hello World!</h1>
+        <h1>Instructions on Vim</h1>
     </header>
     <main>
         <section>
-            <h2>About Me</h2>
-            <p>This is my first web page.</p>
+            <hr>
+            <h2>Opening and closeing vim</h2>
+            <pre>To open vim and close vim, you will need to type in your terminal the following.
+            Opening: vim filename.txt | example: vim index.html
+            Closing: ESC + : + wq, this'll close vim | example: :wq / to close without saving: ESC then type ( :q! )
+            Entering the commands + keys</pre>
+            <kbd>vim filename.txt</kbd>
+            <p>Entering it wrong will result in opening a new vim file.<p>
+            <kbd>ESC + :wq</kbd>
+            <p>Entering a command wrong will display this error message.<p>
+            <samp>Not an editor command: (Typed Command)</samp>
+            <p>To exit editor mode, you use ESC, this'll allow you to use commmands in Vim as well.<p>
+            
+            <hr>
+            <h3>Moving in Vim command mode</h3>
+            <p> These are instructions on how to move and edit in vim.<p>
+            <ul>
+                <li>H Key - Goes Left.</li>
+                <li>J Key - Goes Down.</li>
+                <li>K Key - Goes Up.</li>
+                <li>L Key - Goes Right.</li>
+            </ul>
+            <ul>
+                <dl>
+                    <dt>i — Insert before the current cursor position.</dt>
+                    <dd>I — Move to the beginning of the current line (first non-blank character) and enter insert mode</dd>
+                    <dt>a — Append after the current cursor position.</dt>
+                    <dd>A — Move to the end of the current line and append text.</dd>
+                    <dt>o — Open a new line below the current line and enter insert mode.</dt>
+                    <dd>O — Open a new line above the current line and enter insert mode.</dt>
+                </dl>
+            </ul>
+            <hr>
+            <h4>Commands in Command-Mode</h4>
+            <p>These are commands that can be used in command mode<p>
+            <ul>
+                <li>Hightlighting code
+                    <ol>
+                        <li>syntax on</li>
+                        <li>Enable syntax highlighting for code</li>
+                    </ol>
+                </li>Code Lines
+                <li>
+                    <ol>
+                        <li>set number </li>
+                        <li>Show line numbers on the left</li>
+                    </ol>
+                </li>
+            </ul>
+            <hr>
+            <h5>Here is an example of entering a folder and entering vim.</h5>
+            <p>vim filename.txt<p>
+            <pre>&lt;body&gt;
+                &lt;h1&gt;Editing Example!&lt;/h1&gt;
+                &lt;hr&gt;
+                &lt;p&gt;end of example&lt;/p&gt;
+            &lt;/body&gt;</pre>
         </section>
     </main>
     <footer>
-        <p>Made by me.</p>
+        <p>Instructions made by Luis Contreras.</p>
     </footer>
 </body>
 </html>
