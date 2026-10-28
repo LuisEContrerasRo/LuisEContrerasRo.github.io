@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Box Model Practice</title>
+        <script src="../validate.js"></script>
+        <style>
+        #redbox{
+            background-color:red;
+            height:100px;
+            width:100px;
+            border:2px black solid;
+            background-clip:content-box;
+            margin-left:500px;
+        }
+        #bluebox{
+            background-color:blue;
+            height:100px;
+            width:100px;
+            padding:100px;
+            border:2px black solid;
+            background-clip:content-box;
+            margin-left:604px;
+        }
+        #greenbox{
+            background-color:green;
+            height:100px;
+            width:100px;
+            border:2px black solid;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            padding-right: 0px;
+            padding-left: 20px;
+            background-clip:content-box;
+            margin-left:0px;
+        }
+        #yellowbox{
+            background-color:yellow;
+            height:100px;
+            width:100px;
+            border:2px black solid;
+            padding:100px;
+            background-clip:content-box;
+            margin-left:604px;
+
+        }
+        #purplebox{
+            background-color:purple;
+            height:100px;
+            width:100px;
+            border:2px black solid;
+            padding:100px;
+            background-clip:content-box;
+            margin-left:604px;
+        }
+        </style>
+    </head>
+    <body>
+        <h1>Here are some boxes</h1>
+        <div id="redbox"></div>
+        <div id="bluebox"></div>
+        <div id="greenbox"></div>
+        <div id="yellowbox"></div>
+        <div id="purplebox"></div>
+    </body>
+</html>

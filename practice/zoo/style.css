@@ -1,0 +1,16 @@
+body {
+    background-color:LemonChiffon;
+}
+header{
+    background-color:SkyBlue;
+}
+footer{
+    background-color:Skyblue;
+}
+table, th, tr, td{
+    border: 3px black dashed;
+    border-collapse: collapse;
+}
+#title{
+    color:white;
+}
