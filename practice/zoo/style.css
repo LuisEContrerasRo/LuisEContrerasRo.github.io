@@ -1,16 +1,36 @@
 body {
-    background-color:LemonChiffon;
+  background-color: LemonChiffon;
 }
-header{
-    background-color:SkyBlue;
+header {
+  background-color: SkyBlue;
 }
-footer{
-    background-color:Skyblue;
+footer {
+  background-color: Skyblue;
 }
-table, th, tr, td{
-    border: 3px black dashed;
-    border-collapse: collapse;
+table, th, tr, td {
+  border: 3px black dashed;
+  border-collapse: collapse;
 }
-#title{
-    color:white;
+.nav-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+.navbuttons1 {
+  background-color: gold;
+  border: 2px solid firebrick;
+  border-radius: 10px;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+  padding: 10px 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbuttons1:hover {
+  background-color: bisque;
 }
