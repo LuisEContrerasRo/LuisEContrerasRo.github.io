@@ -53,11 +53,8 @@
               grid-template-rows: 1fr 1fr 1fr;
             }
             .mnm{
-                grid-column-start:1;
-                grid-row-start:1;
                 width:10vh;
                 height:10vh;
-                background-color:red;
                 border-radius:50%;
                 margin: auto;
                 display: grid;
@@ -94,6 +91,11 @@
                 grid-column-start:3;
                 grid-row-start:2;
                 background-color:blue;
+            }
+            #mnm7{
+                grid-auto-columns;
+                grid-row-start:3;
+                background-color:green;
             }
         </style>
     </head>
@@ -134,6 +136,9 @@
                 m
                 </div>
                 <div id="mnm6" class="mnm">
+                m
+                </div>
+                <div id="mnm7" class="mnm">
                 m
                 </div>
             </div>
