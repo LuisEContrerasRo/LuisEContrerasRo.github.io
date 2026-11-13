@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Page</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; }
+    img { display: block; width: 100%; background: #ddd; }
+    h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+    h2 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+    p { color: #555; line-height: 1.6; margin-bottom: 0.5rem; }
+    button { padding: 0.5rem 1.5rem; border: none; border-radius: 5px; background: #333; color: #fff; cursor: pointer; }
+    nav { display: flex; gap: 1rem; }
+    nav a { text-decoration: none; color: inherit; }
+    input[type="text"] { padding: 0.4rem 0.75rem; border: 1px solid #ccc; border-radius: 5px; font-size: 1rem; width: 100%; }
+    label { display: flex; align-items: center; gap: 0.5rem; }
+    /* Layout */
+    .c1 {
+      padding: 1rem;
+    }
+    .c2 {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+      gap: 0.5rem;
+      padding: 0.5rem;
+    }
+    .c3 {
+      display: inline-block;
+      vertical-align: middle;
+      width: 10%;
+      aspect-ratio: 8 / 3;
+      float: left;
+      margin: 0 1rem 0.5rem 0;
+    }
+    .c4 {
+      display: grid;
+      grid:
+        'top    top    top' 3fr
+        'menu   main   sidebar' 10fr
+        'bottom bottom bottom' 10fr
+        / 2fr 3fr 2fr;
+      padding: 1rem;
+    }
+    .c5 {
+      grid-area: main;
+    }
+    .c6 {
+      grid-area: sidebar;
+    }
+    .c7 {
+      display: inline-block;
+      vertical-align: middle;
+      width: 30%;
+      aspect-ratio: 3 / 4;
+      float: left;
+      margin: 0 1rem 0.5rem 0;
+    }
+    .c8 {
+      grid-area: top;
+      text-align: center;
+    }
+    .c9 {
+      padding: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+<header class="c1">
+  <div class="c2">
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Work</a>
+      <a href="#">Contact</a>
+    </nav>
+    <img src="placeholder.jpg" alt="" class="c3">
+    <input type="text" placeholder="Enter text">
+    <button>Click me</button>
+  </div>
+  <h1>Page Heading</h1>
+</header>
+<main class="c4">
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Work</a>
+    <a href="#">Contact</a>
+  </nav>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Work</a>
+    <a href="#">Contact</a>
+  </nav>
+  <p class="c5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed</p>
+  <p class="c6">
+    <img src="placeholder.jpg" alt="" class="c7">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+  </p>
+  <h2 class="c8">Section Heading</h2>
+</main>
+<footer class="c9">
+
+</footer>
+  <script>
+  (function() {
+    var s = document.createElement("script");
+    s.src = "https://cdn.jsdelivr.net/gh/gracehoppercenter/validate@1.0.5/validate.js";
+    s.async = false;
+    document.head.appendChild(s);
+  })();
+  </script>
+</body>
+</html>
