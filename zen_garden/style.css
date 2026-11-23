@@ -1,0 +1,30 @@
+/*
+  ITD110 Zen Garden Project
+  Your name:
+  Your design concept (one sentence):
+
+  All of your CSS goes in this file.
+*/
+body{
+    background-color: lemonchiffon;
+}
+.submenu {
+    display: none;
+}
+
+.menu-item:hover .submenu,
+.menu-item:focus-within .submenu {
+    display: block;
+}
+
+#disclaimer{
+        background-color:hotpink;
+        font-size: 3rem;
+    }
+#disclaimer::before{
+    content:"Hello!";
+    background-color:skyblue;
+    height:200px;
+}
+
+
